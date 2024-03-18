@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* 淡蓝色背景 */
+    color: #333; /* 深灰色文本 */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* 白色背景 */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* 淡蓝色标题 */
+}
+
+.block-info h2, .transaction-list h2 {
+    margin-bottom: 10px;
+    color: #007bff; /* 淡蓝色标题 */
+}
+
+.transaction-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.transaction-list li {
+    margin-bottom: 5px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff; /* 淡蓝色按钮 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* 深蓝色按钮悬停状态 */
+}
+
+.chart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%; /* 图表占据整个容器宽度 */
+    height: auto; /* 自适应高度 */
+}
+
+.language-switch {
+    text-align: right;
+    margin-bottom: 10px;
+}
