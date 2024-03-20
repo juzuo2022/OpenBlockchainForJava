@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <header>
+            <h1>Blockchain Web App</h1>
+        </header>
+        <div class="content">
+            <div class="chart">
+                <h2>Blockchain Chart</h2>
+                <canvas id="blockchain-chart"></canvas>
+                <div class="buttons">
+                    <button @click="mineBlock">Mine Block</button>
+                </div>
+            </div>
+            <div class="blockchain">
+                <h2>Blockchain Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Timestamp</th>
+                            <th>Data</th>
+                            <th>Previous Hash</th>
+                            <th>Hash</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="block in blockchain" :key="block.index">
+                            <td>{{ block.index }}</td>
+                            <td>{{ block.timestamp }}</td>
+                            <td>{{ block.data }}</td>
+                            <td>{{ block.previousHash }}</td>
+                            <td>{{ block.hash }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="additional-info">
+                <!-- 可以在此处显示其他信息 -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

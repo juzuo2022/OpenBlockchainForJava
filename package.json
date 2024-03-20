@@ -1,0 +1,14 @@
+{
+    "name": "blockchain-explorer",
+    "version": "1.0.0",
+    "description": "Simple blockchain explorer frontend",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "22333",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.3"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/gson-2.10.1.jar",
+        "lib/log4j-core-2.23.1.jar",
+        "lib/log4j-api-2.23.1.jar"
+    ]
+}
